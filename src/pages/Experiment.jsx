@@ -18,7 +18,7 @@ const Experiment = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div className="flex flex-col items-center justify-center min-h-[80vh] w-full px-4 text-center space-y-8">
       <h2 className="text-3xl font-bold mb-4">{t('experiment.task')}</h2>
       <img 
         src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?q=80&w=1000&auto=format&fit=crop" 

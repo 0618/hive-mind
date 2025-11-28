@@ -21,7 +21,7 @@ const generateData = () => {
 };
 
 const Results = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const experimentData = JSON.parse(localStorage.getItem('experimentData'));
 
@@ -38,12 +38,12 @@ const Results = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4">
+    <div className="flex flex-col items-center justify-center min-h-[80vh] w-full px-4 text-center space-y-8">
       <h1 className="text-4xl font-bold mb-2">{t('results.title')}</h1>
       <h2 className="text-2xl text-gray-400 mb-8">Your Guess: {guess}</h2>
 
-      <div style={{ width: '100%', height: 400 }}>
-        <ResponsiveContainer>
+      <div key={i18n.language} style={{ width: '100%', height: 400 }}>
+        <ResponsiveContainer width="100%" height="100%">
           <ComposedChart data={chartData}>
             <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
             <XAxis dataKey="name" stroke="#9CA3AF" />
@@ -67,7 +67,7 @@ const Results = () => {
         onClick={handleTryAgain}
         className="mt-8 px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700"
       >
-        Try Again
+        {t('results.try_again')}
       </button>
     </div>
   );

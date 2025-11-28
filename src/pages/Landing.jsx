@@ -7,9 +7,9 @@ const Landing = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <main className="flex flex-col items-center justify-center min-h-[80vh] w-full px-4 text-center space-y-8">
       <LanguageSwitcher />
-      <div className="text-center">
+      <div>
         <h1 className="text-6xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
           {t('landing.title')}
         </h1>
@@ -20,7 +20,7 @@ const Landing = () => {
           </button>
         </Link>
       </div>
-    </div>
+    </main>
   );
 };
 
