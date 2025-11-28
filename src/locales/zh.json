@@ -1,0 +1,21 @@
+{
+  "landing": {
+    "title": "群体智慧实验室",
+    "subtitle": "互联网真的比专家更聪明吗？",
+    "button": "参与实验"
+  },
+  "experiment": {
+    "task": "预估豆子数量",
+    "social_cue": "当前群体平均值:",
+    "submit": "提交猜测"
+  },
+  "results": {
+    "title": "实验结果",
+    "you": "你的猜测",
+    "truth": "真实答案",
+    "independent": "独立群体",
+    "social": "受影响群体"
+  }
+}
+
+

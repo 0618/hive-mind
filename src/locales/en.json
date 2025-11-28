@@ -1,0 +1,21 @@
+{
+  "landing": {
+    "title": "The Hive Mind",
+    "subtitle": "Can the internet predict the truth?",
+    "button": "Join Experiment"
+  },
+  "experiment": {
+    "task": "Estimate the beans",
+    "social_cue": "Current Hive Average:",
+    "submit": "Lock In Guess"
+  },
+  "results": {
+    "title": "Experiment Results",
+    "you": "You",
+    "truth": "The Truth",
+    "independent": "Independent Crowd",
+    "social": "Socially Influenced"
+  }
+}
+
+

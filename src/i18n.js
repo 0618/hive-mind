@@ -1,6 +1,8 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
+import enTranslation from './locales/en.json';
+import zhTranslation from './locales/zh.json';
 
 i18n
   .use(LanguageDetector)
@@ -13,32 +15,10 @@ i18n
     },
     resources: {
       en: {
-        translation: {
-          nav: {
-            home: 'Home',
-            about: 'About',
-          },
-          home: {
-            title: 'Hive Mind',
-          },
-          about: {
-            title: 'About',
-          },
-        }
+        translation: enTranslation
       },
       zh: {
-        translation: {
-          nav: {
-            home: '主页',
-            about: '关于',
-          },
-          home: {
-            title: '蜂巢思维',
-          },
-          about: {
-            title: '关于',
-          },
-        }
+        translation: zhTranslation
       }
     }
   });
