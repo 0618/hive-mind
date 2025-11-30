@@ -15,7 +15,13 @@
     "truth": "The Truth",
     "independent": "Independent Crowd",
     "social": "Socially Influenced",
-    "try_again": "Try Again"
+    "try_again": "Try Again",
+    "your_guess": "Your Guess",
+    "loading": "Analyzing Hive Mind...",
+    "real_answer": "Real Answer",
+    "independent_median": "Independent Median",
+    "social_median": "Social Median",
+    "feedback": "You were closer than {{percent}}% of the Social group"
   }
 }
 

@@ -15,7 +15,13 @@
     "truth": "真实答案",
     "independent": "独立群体",
     "social": "受影响群体",
-    "try_again": "再试一次"
+    "try_again": "再试一次",
+    "your_guess": "你的猜测",
+    "loading": "分析群体智慧中...",
+    "real_answer": "真实答案",
+    "independent_median": "独立群体中位数",
+    "social_median": "受影响群体中位数",
+    "feedback": "你比 {{percent}}% 的受影响群体成员更接近真实答案"
   }
 }
 
