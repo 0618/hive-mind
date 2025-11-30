@@ -1,20 +1,43 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
+import { db } from '../firebase';
+import { collection, addDoc, getDocs, serverTimestamp } from 'firebase/firestore';
 
 const Experiment = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [guess, setGuess] = useState(500);
   const [group, setGroup] = useState(null);
+  const [socialAvg, setSocialAvg] = useState(0);
 
   useEffect(() => {
     setGroup(Math.random() < 0.5 ? 'independent' : 'social');
+    
+    const fetchGuesses = async () => {
+      const querySnapshot = await getDocs(collection(db, 'guesses'));
+      const guesses = querySnapshot.docs.map(doc => doc.data().guess);
+      if (guesses.length > 0) {
+        const avg = guesses.reduce((a, b) => a + b, 0) / guesses.length;
+        setSocialAvg(avg);
+      }
+    };
+
+    fetchGuesses();
   }, []);
 
-  const handleSubmit = () => {
-    localStorage.setItem('experimentData', JSON.stringify({ guess, group }));
-    navigate('/results');
+  const handleSubmit = async () => {
+    try {
+      await addDoc(collection(db, 'guesses'), {
+        guess: Number(guess),
+        group,
+        timestamp: serverTimestamp()
+      });
+      localStorage.setItem('guess', guess);
+      navigate('/results');
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
   };
 
   return (
@@ -28,7 +51,7 @@ const Experiment = () => {
 
       {group === 'social' && (
         <div className="text-orange-400 mb-4">
-          {t('experiment.social_cue')} 1840
+          {t('experiment.social_cue')} {Math.round(socialAvg)}
         </div>
       )}
 
