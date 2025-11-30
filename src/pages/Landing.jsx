@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import LanguageSwitcher from '../components/LanguageSwitcher';
 import { seedDatabase } from '../utils/seeder';
 
 const Landing = () => {
@@ -18,11 +17,6 @@ const Landing = () => {
   return (
     <div className="relative min-h-screen w-full bg-slate-900 text-white flex flex-col items-center justify-center overflow-hidden font-sans">
       
-      {/* 1. Language Switcher (Fixed Top-Right) */}
-      <div className="fixed top-6 right-6 z-50">
-        <LanguageSwitcher />
-      </div>
-
       {/* 2. Main Content (Centered) */}
       <main className="z-10 flex flex-col items-center text-center px-4 max-w-4xl space-y-10">
         
