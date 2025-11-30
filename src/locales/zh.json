@@ -21,7 +21,8 @@
     "real_answer": "真实答案",
     "independent_median": "独立群体中位数",
     "social_median": "受影响群体中位数",
-    "feedback": "你比 {{percent}}% 的受影响群体成员更接近真实答案"
+    "feedback": "你比 {{percent}}% 的受影响群体成员更接近真实答案",
+    "disclaimer": "* 注：为了在启动初期展示统计效果，数据集包含100个基于标准差模型的模拟条目。"
   },
   "education": {
     "wisdom_title": "为什么独立群体如此聪明？",
@@ -29,7 +30,7 @@
     "madness_title": "为什么受影响群体会出错？",
     "madness_body": "当人们看到别人的猜测时，他们不再关注瓶子，而是开始盲从群体。这被称为‘信息级联’。如果最初的几个人猜错了，后面的人也会跟着错。",
     "example_label": "现实案例：",
-    "example_link": "The Music Lab Study (Princeton)",
+    "example_link": "普林斯顿音乐实验室研究",
     "conditions": {
       "diversity": "多样性",
       "independence": "独立性",

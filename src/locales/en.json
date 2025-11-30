@@ -21,7 +21,8 @@
     "real_answer": "Real Answer",
     "independent_median": "Independent Median",
     "social_median": "Social Median",
-    "feedback": "You were closer than {{percent}}% of the Social group"
+    "feedback": "You were closer than {{percent}}% of the Social group",
+    "disclaimer": "* To demonstrate the statistical effect during the initial launch phase, the dataset includes 100 simulated entries based on standard deviation models."
   },
   "education": {
     "wisdom_title": "Why was the Independent Crowd smart?",
@@ -29,7 +30,7 @@
     "madness_title": "Why was the Social Crowd wrong?",
     "madness_body": "When people see other guesses, they stop looking at the jar and start looking at the crowd. This is called 'Information Cascading'. If the first few guesses are wrong, everyone follows them off a cliff.",
     "example_label": "Real World Example:",
-    "example_link": "普林斯顿音乐实验室研究",
+    "example_link": "The Music Lab Study (Princeton)",
     "conditions": {
       "diversity": "Diversity",
       "independence": "Independence",

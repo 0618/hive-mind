@@ -162,6 +162,10 @@ const Results = () => {
         </ResponsiveContainer>
       </div>
 
+      <p className="text-xs text-slate-500 italic mt-4 text-center max-w-2xl mx-auto">
+        {t('results.disclaimer')}
+      </p>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-lg w-full max-w-4xl">
         <div className="bg-gray-800 p-4 rounded-lg">
           <h3 className="font-bold text-green-400">
