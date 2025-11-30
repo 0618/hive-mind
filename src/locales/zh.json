@@ -22,7 +22,18 @@
     "independent_median": "独立群体中位数",
     "social_median": "受影响群体中位数",
     "feedback": "你比 {{percent}}% 的受影响群体成员更接近真实答案"
+  },
+  "education": {
+    "wisdom_title": "为什么独立群体如此聪明？",
+    "wisdom_body": "1906年，统计学家高尔顿观察了800人猜测牛的重量。虽然个人的猜测千奇百怪，但群体的平均值却惊人地准确。这是因为个人的误差会互相抵消。",
+    "madness_title": "为什么受影响群体会出错？",
+    "madness_body": "当人们看到别人的猜测时，他们不再关注瓶子，而是开始盲从群体。这被称为‘信息级联’。如果最初的几个人猜错了，后面的人也会跟着错。",
+    "example_label": "现实案例：",
+    "example_link": "The Music Lab Study (Princeton)",
+    "conditions": {
+      "diversity": "多样性",
+      "independence": "独立性",
+      "decentralization": "去中心化"
+    }
   }
 }
-
-

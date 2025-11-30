@@ -22,7 +22,18 @@
     "independent_median": "Independent Median",
     "social_median": "Social Median",
     "feedback": "You were closer than {{percent}}% of the Social group"
+  },
+  "education": {
+    "wisdom_title": "Why was the Independent Crowd smart?",
+    "wisdom_body": "In 1906, statistician Francis Galton observed 800 people guessing the weight of an ox. While individual guesses were wild, the average was perfect. This happens because individual errors cancel each other out.",
+    "madness_title": "Why was the Social Crowd wrong?",
+    "madness_body": "When people see other guesses, they stop looking at the jar and start looking at the crowd. This is called 'Information Cascading'. If the first few guesses are wrong, everyone follows them off a cliff.",
+    "example_label": "Real World Example:",
+    "example_link": "普林斯顿音乐实验室研究",
+    "conditions": {
+      "diversity": "Diversity",
+      "independence": "Independence",
+      "decentralization": "Decentralization"
+    }
   }
 }
-
-
