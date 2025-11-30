@@ -1,7 +1,8 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Landing from './pages/Landing';
-import Experiment from './pages/Experiment';
-import Results from './pages/Results';
+import { Analytics } from "@vercel/analytics/react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Landing from "./pages/Landing";
+import Experiment from "./pages/Experiment";
+import Results from "./pages/Results";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           </Routes>
         </div>
       </div>
+      <Analytics />
     </Router>
   );
 }
